@@ -13,6 +13,8 @@ Now that we've created a custom filter, it's important that we test the output o
 
 Like our services, we can inject filters into our tests. We use the `$filter` helper.
 
+As our filters do not care explicitly what *type* of data is given to them, we don't need to load them up in Protractor and test them in the actual application. We can simply inject them into our karma tests and test the functionality out of them with any data!
+
 Let's say we've got this filter:
 
 ```js
